@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Biodata Mahasiswa</title>
+  <style>
+    *{
+        margin: 0;
+        padding: 0;
+    }
+
+    body{
+        font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        background: grey;
+        min-height: 100vh;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .container{
+        width: 500px;
+        height: 100%;
+        padding: 3%;
+        background: white;
+        border-radius: 15px;
+        text-align: center;
+        cursor: default;
+        box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.3);
+    }
+    h1{
+        margin-bottom: 20px;
+    }
+
+    .biodata-item{
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      padding: 10px 10px 10px 10px;
+      border-bottom: 1px solid black;
+      margin-bottom: 10px;
+    }
+
+    .label{
+      font-weight: 600;
+    }
+
+    .foto {
+      width: 120px;
+      height: 120px;
+      border-radius: 50%;
+      margin: 0 auto;
+      border: 1-px solid black;
+    }
+
+    .foto img{
+      width: 100%;
+      height: 100%;
+      border-radius: 50%;
+      object-fit: cover;
+      object-position: 50% 60%;
+    }
+     .form-actions {
+      display: flex;
+      justify-content: right;
+      gap: 15px;
+      margin-top: 20px;
+    }
+
+     .btn {
+      padding: 10px 20px;
+      border: none;
+      border-radius: 6px;
+      cursor: pointer;
+      font-size: 14px;
+      font-weight: bold;
+    }
+    .btn-submit {
+      background: #0d6efd;
+      transition-duration: .2s;
+      color: #fff;
+    }
+
+
+  </style>
+</head>
+<body>
+  <div class="container">
+    <div class="foto">
+    <img src="gambar.png" alt="pic"> 
+    </div>
+    <h1>RayTrifeno Surualing</h1>
+    <div class="biodata">
+      <div class="biodata-item">
+        <span class="label">NIM</span>
+        <span class="value">672024232</span>
+      </div>
+
+      <div class="biodata-item">
+        <span class="label">Program Studi</span>
+        <span class="value">Teknik Informatika</span>
+      </div>
+
+      <div class="biodata-item">
+        <span class="label">Falkutas</span>
+        <span class="value">Falkutas Teknologi Informasi</span>
+      </div>
+
+      <div class="biodata-item">
+        <span class="label">Angkatan</span>
+        <span class="value">2024</span>
+      </div>
+
+      <div class="biodata-item">
+        <span class="label">Email</span>
+        <span class="value">672024232@student.uksw.edu</span>
+      </div>
+
+      <div class="biodata-item">
+        <span class="label">No. Telp</span>
+        <span class="value">62-831-5592-1792</span>
+      </div>
+
+      <div class="biodata-item">
+        <span class="label">Manado</span>
+        <span class="value">Sulawesi Utara</span>
+      </div>
+    </div>
+      <div class="form-actions">
+        <a href="index.html"><button type="submit" class="btn btn-submit">Previous</button></a>
+        </div>
+  </div>
+</body>
+</html>
